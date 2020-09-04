@@ -1,4 +1,5 @@
 ﻿
+using System.Windows;
 
 namespace WpfAddressBook.Window
 {
@@ -10,6 +11,10 @@ namespace WpfAddressBook.Window
         public SerchWindow()
         {
             InitializeComponent();
+        }
+
+        private void SerchWindow_Loaded(object sender, RoutedEventArgs e) 
+        {
         }
     }
 }

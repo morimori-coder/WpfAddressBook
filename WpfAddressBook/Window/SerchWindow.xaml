@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAddressBook.Window"
+        xmlns:winform="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
         mc:Ignorable="d"
         Title="SerchWindow" Height="450" Width="800">
     <Grid>
@@ -11,8 +12,7 @@
         <TextBox x:Name="NumBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Margin="44,10,0,0"/>
         <Label x:Name="NameLabel" Content="氏名" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="167,10,0,0"/>
-        <Label x:Name="birthDayLabel" Content="生年月日" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="birthYearLabel" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="384,10,0,0"/>
-
+        <Label x:Name="birthLabel" Content="生年月日" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="DtStart" Margin="399,10,0,0" FontSize="13" FontFamily="Meiryo UI" Height="34" VerticalAlignment="Top" HorizontalAlignment="Left" Width="180"/>
     </Grid>
 </Window>

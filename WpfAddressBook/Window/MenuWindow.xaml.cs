@@ -1,4 +1,4 @@
-﻿
+﻿using WpfAddressBook.Window;
 
 namespace WpfAddressBook
 {
@@ -10,6 +10,13 @@ namespace WpfAddressBook
         public MenuWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var searchWindow = new SerchWindow();
+            searchWindow.Show();
+            this.IsEnabled = false;
         }
     }
 }
