@@ -8,11 +8,22 @@
         mc:Ignorable="d"
         Title="SerchWindow" Height="450" Width="800">
     <Grid>
-        <Label x:Name="NumLabel" Content="No." HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="NumBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="33" Margin="44,10,0,0"/>
-        <Label x:Name="NameLabel" Content="氏名" HorizontalAlignment="Left" Margin="122,10,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="167,10,0,0"/>
+        <Label x:Name="NumLabel" Content="No." HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="NumBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,10,671,0"/>
+        <Label x:Name="NameLabel" Content="氏名" Margin="146,0,612,383" VerticalAlignment="Bottom" RenderTransformOrigin="1.341,0.562"/>
+        <TextBox x:Name="NameBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="196,10,476,0"/>
         <Label x:Name="birthLabel" Content="生年月日" HorizontalAlignment="Left" Margin="321,10,0,0" VerticalAlignment="Top"/>
         <DatePicker x:Name="DtStart" Margin="399,10,0,0" FontSize="13" FontFamily="Meiryo UI" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="180"/>
+        <Label x:Name="PostalCodeLabel" Content="郵便番号" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PostalCodeBox" Margin="88,0,0,336" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Bottom"/>
+        <Label x:Name="AddressLabel" Content="住所" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="AddressBox" Margin="88,0,0,281" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="491" Height="23" VerticalAlignment="Bottom"/>
+        <Label x:Name="PhoneLabel" Content="電話" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="PhoneNumBox" Margin="88,167,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="CellPhoneLabel" Content="携帯電話" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="CellPhoneNumBox" Margin="88,227,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="MailAddressLabel" Content="メールアドレス" HorizontalAlignment="Left" Margin="321,164,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MailAddressBox" Margin="399,167,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="354" Height="23" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>
