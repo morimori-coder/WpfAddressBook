@@ -14,7 +14,7 @@ namespace WpfAddressBook
 
         private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-            var searchWindow = new SerchWindow();
+            var searchWindow = new SerchWindow(this);
             searchWindow.Show();
             this.IsEnabled = false;
         }
