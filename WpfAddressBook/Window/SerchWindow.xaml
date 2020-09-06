@@ -20,7 +20,6 @@
         <Label x:Name="NameLabel" Content="氏名" Margin="146,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.341,0.562" HorizontalAlignment="Left" Width="34" Height="26" Grid.Row="1"/>
         <TextBox x:Name="NameBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="196,17,0,0" HorizontalAlignment="Left" Width="120" Grid.Row="1"/>
         <Label x:Name="birthLabel" Content="生年月日" Margin="335,17,0,0" Grid.Row="1" RenderTransformOrigin="0.81,0.569" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="58"/>
-        <DatePicker x:Name="DtStart" Margin="399,17,0,0" FontSize="13" FontFamily="Meiryo UI" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="180" Grid.Row="1"/>
         <Label x:Name="PostalCodeLabel" Content="郵便番号" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="58"/>
         <TextBox x:Name="PostalCodeBox" Margin="88,60,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top" Grid.Row="1"/>
         <Label x:Name="AddressLabel" Content="住所" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="34"/>
@@ -31,7 +30,9 @@
         <TextBox x:Name="CellPhoneNumBox" Margin="88,227,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top" Grid.Row="1"/>
         <Label x:Name="MailAddressLabel" Content="メールアドレス" HorizontalAlignment="Left" Margin="321,164,0,0" VerticalAlignment="Top" Grid.Row="1" Height="26" Width="72"/>
         <TextBox x:Name="MailAddressBox" Margin="399,167,0,0" TextWrapping="Wrap" Text="" Grid.Row="1" HorizontalAlignment="Left" Width="354" Height="23" VerticalAlignment="Top"/>
-        <DataGrid HorizontalAlignment="Left" Margin="10,274,0,0" Grid.RowSpan="2" Width="743" Height="237" VerticalAlignment="Top">
+        <Button x:Name="ClearBotton" Content="クリア" HorizontalAlignment="Left" Margin="691,230,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="62"/>
+        <Button x:Name="SearchBotton" Content="検索" HorizontalAlignment="Left" Margin="601,230,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="62"/>
+        <DataGrid x:Name="SerchResultGrid" HorizontalAlignment="Left" Margin="10,274,0,0" Grid.RowSpan="2" Width="743" Height="237" VerticalAlignment="Top">
             <DataGrid.Columns>
                 <DataGridComboBoxColumn Header="ID"/>
                 <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="氏名"/>
@@ -43,9 +44,14 @@
                 <DataGridCheckBoxColumn Binding="{x:Null}" ClipboardContentBinding="{x:Null}" Header="携帯番号"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="登録画面へ移動" HorizontalAlignment="Left" Margin="650,528,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="103"/>
-        <Button Content="クリア" HorizontalAlignment="Left" Margin="691,230,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="62"/>
-        <Button Content="検索" HorizontalAlignment="Left" Margin="601,230,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="62"/>
+        <Button x:Name="GoRegisterBotton" Content="登録画面へ移動" HorizontalAlignment="Left" Margin="650,528,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="103"/>
+        
+        <TextBox x:Name="YearText" HorizontalAlignment="Left" Height="23" Margin="417,17,0,0" Grid.RowSpan="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51"/>
+        <Label x:Name="YearLabel" Content="年" HorizontalAlignment="Left" Margin="482,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="1" Margin="122,349,-125,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="3"/>
+        <ComboBox x:Name="MonthComboBox" HorizontalAlignment="Left" Margin="526,18,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="41"/>
+        <Label x:Name="MonthLabel" Content="年" HorizontalAlignment="Left" Margin="582,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
+        <ComboBox x:Name="DayComboBox" HorizontalAlignment="Left" Margin="622,18,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="41" RenderTransformOrigin="2.293,1.636"/>
 
     </Grid>
 </Window>
