@@ -19,9 +19,12 @@ namespace WpfAddressBook.Window
     /// </summary>
     public partial class RegisterWindow : System.Windows.Window
     {
-        public RegisterWindow()
+        public System.Windows.Window MenuWindow { get; private set; }
+
+        public RegisterWindow(System.Windows.Window window)
         {
             InitializeComponent();
+            this.MenuWindow = window;
         }
     }
 }

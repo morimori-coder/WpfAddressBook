@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MenuWindow" Height="200" Width="300">
     <Grid>
-        <Button Content="検索画面表示" HorizontalAlignment="Left" Margin="30,56,0,0" VerticalAlignment="Top" Width="106" Height="47" Click="Button_Click"/>
-        <Button Content="登録画面表示" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="158,56,0,0" Height="47"/>
+        <Button x:Name="ShowSearchWindowBotton" Content="検索画面表示" HorizontalAlignment="Left" Margin="30,56,0,0" VerticalAlignment="Top" Width="106" Height="47" Click="ClickSearchWindowBotton"/>
+        <Button x:Name="ShowRegisterWindowBotton" Content="登録画面表示" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="158,56,0,0" Height="47" Click="ClickRegisterWindowBotton"/>
 
     </Grid>
 </Window>

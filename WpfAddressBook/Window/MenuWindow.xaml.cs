@@ -12,10 +12,17 @@ namespace WpfAddressBook
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, System.Windows.RoutedEventArgs e)
+        private void ClickSearchWindowBotton(object sender, System.Windows.RoutedEventArgs e)
         {
             var searchWindow = new SerchWindow(this);
             searchWindow.Show();
+            this.IsEnabled = false;
+        }
+
+        private void ClickRegisterWindowBotton(object sender, System.Windows.RoutedEventArgs e)
+        {
+            var registerWindow = new RegisterWindow(this);
+            registerWindow.Show();
             this.IsEnabled = false;
         }
     }
