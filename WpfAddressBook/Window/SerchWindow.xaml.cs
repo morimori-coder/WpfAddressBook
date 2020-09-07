@@ -22,10 +22,6 @@ namespace WpfAddressBook.Window
             { this.DayComboBox.Items.Add(i.ToString()); }
         }
 
-        private void SerchWindow_Loaded(object sender, RoutedEventArgs e) 
-        {
-        }
-
         private void WindowClosing(object sender, CancelEventArgs e)
         {
             this.MenuWindow.IsEnabled = true;
