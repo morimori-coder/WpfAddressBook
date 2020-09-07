@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
         Closing="WindowClosing"
-        Title="SerchWindow" Height="600" Width="800">
+        Title="SerchWindow" Height="600" Width="778">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -50,8 +50,9 @@
         <Label x:Name="YearLabel" Content="年" HorizontalAlignment="Left" Margin="482,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" HorizontalAlignment="Left" Height="1" Margin="122,349,-125,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="3"/>
         <ComboBox x:Name="MonthComboBox" HorizontalAlignment="Left" Margin="526,18,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="41"/>
-        <Label x:Name="MonthLabel" Content="年" HorizontalAlignment="Left" Margin="582,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
+        <Label x:Name="MonthLabel" Content="月" HorizontalAlignment="Left" Margin="582,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
         <ComboBox x:Name="DayComboBox" HorizontalAlignment="Left" Margin="622,18,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="41" RenderTransformOrigin="2.293,1.636"/>
+        <Label x:Name="DayLabel" Content="日" HorizontalAlignment="Left" Margin="683,17,0,0" VerticalAlignment="Top" Height="26" Width="22" Grid.Row="1"/>
 
     </Grid>
 </Window>
