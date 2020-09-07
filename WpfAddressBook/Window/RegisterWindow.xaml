@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="RegisterWindow" Height="600" Width="778">
     <Grid>
-        
+        <Label x:Name="NumLabel" Content="No." HorizontalAlignment="Left" Margin="36,17,0,0" VerticalAlignment="Top" Height="26" Width="29"/>
+        <TextBox x:Name="NumBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="88,17,0,0" HorizontalAlignment="Left" Width="33"/>
+        <Label x:Name="NameLabel" Content="氏名" Margin="146,17,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.341,0.562" HorizontalAlignment="Left" Width="34" Height="26"/>
+        <TextBox x:Name="NameBox" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Margin="196,17,0,0" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="birthLabel" Content="生年月日" Margin="335,17,0,0" RenderTransformOrigin="0.81,0.569" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="58"/>
+        <Label x:Name="PostalCodeLabel" Content="郵便番号" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top" Height="26" Width="58"/>
+        <TextBox x:Name="PostalCodeBox" Margin="88,60,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="AddressLabel" Content="住所" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="AddressBox" Margin="88,115,0,0" TextWrapping="Wrap" Text="" Height="23" VerticalAlignment="Top" HorizontalAlignment="Left" Width="544"/>
+        <Label x:Name="PhoneLabel" Content="電話" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <TextBox x:Name="PhoneNumBox" Margin="88,167,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="CellPhoneLabel" Content="携帯電話" HorizontalAlignment="Left" Margin="10,224,0,0" VerticalAlignment="Top" Height="26" Width="58"/>
+        <TextBox x:Name="CellPhoneNumBox" Margin="88,227,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="120" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="MailAddressLabel" Content="メールアドレス" HorizontalAlignment="Left" Margin="321,164,0,0" VerticalAlignment="Top" Height="26" Width="72"/>
+        <TextBox x:Name="MailAddressBox" Margin="399,167,0,0" TextWrapping="Wrap" Text="" HorizontalAlignment="Left" Width="354" Height="23" VerticalAlignment="Top"/>
+        <Button x:Name="ClearBotton" Content="クリア" HorizontalAlignment="Left" Margin="691,230,0,0" VerticalAlignment="Top" Width="62"/>
+        <Button x:Name="SearchBotton" Content="検索" HorizontalAlignment="Left" Margin="601,230,0,0" VerticalAlignment="Top" Width="62"/>
+
+        <TextBox x:Name="YearText" HorizontalAlignment="Left" Height="23" Margin="417,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="51"/>
+        <Label x:Name="YearLabel" Content="年" HorizontalAlignment="Left" Margin="482,17,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <ComboBox x:Name="MonthComboBox" HorizontalAlignment="Left" Margin="526,18,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label x:Name="MonthLabel" Content="月" HorizontalAlignment="Left" Margin="582,17,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+        <ComboBox x:Name="DayComboBox" HorizontalAlignment="Left" Margin="622,18,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="2.293,1.636"/>
+        <Label x:Name="DayLabel" Content="日" HorizontalAlignment="Left" Margin="683,17,0,0" VerticalAlignment="Top" Height="26" Width="22"/>
+
     </Grid>
 </Window>

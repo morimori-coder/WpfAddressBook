@@ -17,7 +17,7 @@ namespace WpfAddressBook.Window
     /// <summary>
     /// RegisterWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class RegisterWindow : Window
+    public partial class RegisterWindow : System.Windows.Window
     {
         public RegisterWindow()
         {
