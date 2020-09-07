@@ -88,6 +88,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="IniFile.cs" />
     <Compile Include="Window\SerchWindow.xaml.cs">
       <DependentUpon>SerchWindow.xaml</DependentUpon>
     </Compile>
