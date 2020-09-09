@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
@@ -37,11 +38,19 @@ namespace WpfAddressBook
             DispatcherUnhandledExceptionEventArgs e)
         {
             // 未処理の例外の処理
-            Exception ex = e.Exception;
-            MessageBox.Show(ex.ToString());
+            //Exception ex = e.Exception;
+            //MessageBox.Show(ex.ToString());
+            string logFilePath = $"{ Directory.GetCurrentDirectory() }\\error.log";
 
-            // ハンドルされない例外を処理済みにするためにtrueを指定
-            e.Handled = true;
+            using (StreamWriter errorLog = new StreamWriter(logFilePath, true)) {
+                errorLog.WriteLine($"Error@{DateTime.Now.ToString("R")}");
+                errorLog.WriteLine(e.Exception.ToString());
+            }
+
+            MessageBox.Show($"エラーが発生しました。このエラーを、ファイル{logFilePath}の内容とともにシステム管理者に報告してください");
+
+                // ハンドルされない例外を処理済みにするためにtrueを指定
+                e.Handled = true;
         }
     }
 }
