@@ -15,8 +15,6 @@ namespace WpfAddressBook
     /// </summary>
     public partial class App : Application
     {
-		public Exception LastError { get; private set; }
-
 		// Startupで呼ばれるイベントハンドラ
 		private void Application_Startup(object sender, StartupEventArgs e)
         {
@@ -55,9 +53,6 @@ namespace WpfAddressBook
 
 			// ハンドルされない例外を処理済みにするためにtrueを指定
 			e.Handled = true;
-
-            // 最後に発生したエラーを格納
-            this.LastError = e.Exception;
 		}
 	}
 }

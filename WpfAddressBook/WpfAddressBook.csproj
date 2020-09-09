@@ -88,7 +88,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AppSettings.cs" />
     <Compile Include="IniFile.cs" />
     <Compile Include="Window\RegisterWindow.xaml.cs">
       <DependentUpon>RegisterWindow.xaml</DependentUpon>
