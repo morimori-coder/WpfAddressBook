@@ -15,8 +15,10 @@ namespace WpfAddressBook
     /// </summary>
     public partial class App : Application
     {
-        // Startupで呼ばれるイベントハンドラ
-        private void Application_Startup(object sender, StartupEventArgs e)
+		public Exception LastError { get; private set; }
+
+		// Startupで呼ばれるイベントハンドラ
+		private void Application_Startup(object sender, StartupEventArgs e)
         {
             // アプリ開始時の処理
 
@@ -36,21 +38,26 @@ namespace WpfAddressBook
         // DispatcherUnhandledExceptionのイベントハンドラ
         private void Application_DispatcherUnhandledException(object sender,
             DispatcherUnhandledExceptionEventArgs e)
-        {
-            // 未処理の例外の処理
-            //Exception ex = e.Exception;
-            //MessageBox.Show(ex.ToString());
-            string logFilePath = $"{ Directory.GetCurrentDirectory() }\\error.log";
+		{
+			// 未処理の例外の処理
+			//Exception ex = e.Exception;
+			//MessageBox.Show(ex.ToString());
+			string logFilePath = $"{ Directory.GetCurrentDirectory() }\\error.log";
 
-            using (StreamWriter errorLog = new StreamWriter(logFilePath, true)) {
-                errorLog.WriteLine($"Error@{DateTime.Now.ToString("R")}");
-                errorLog.WriteLine(e.Exception.ToString());
-            }
+			using (StreamWriter errorLog = new StreamWriter(logFilePath, true))
+			{
+				errorLog.WriteLine($"Error@{DateTime.Now.ToString("R")}");
+				errorLog.WriteLine(e.Exception.ToString());
+			}
 
-            MessageBox.Show($"エラーが発生しました。このエラーを、ファイル{logFilePath}の内容とともにシステム管理者に報告してください");
+			MessageBox.Show($"エラーが発生しました。このエラーを、" +
+				$"ファイル{logFilePath}の内容とともにシステム管理者に報告してください");
 
-                // ハンドルされない例外を処理済みにするためにtrueを指定
-                e.Handled = true;
-        }
-    }
+			// ハンドルされない例外を処理済みにするためにtrueを指定
+			e.Handled = true;
+
+            // 最後に発生したエラーを格納
+            this.LastError = e.Exception;
+		}
+	}
 }
