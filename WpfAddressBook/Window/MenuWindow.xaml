@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAddressBook"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="200" Width="300">
+        Title="MenuWindow" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="ShowSearchWindowBotton" Content="検索画面表示" HorizontalAlignment="Left" Margin="30,56,0,0" VerticalAlignment="Top" Width="106" Height="47" Click="ClickSearchWindowBotton"/>
-        <Button x:Name="ShowRegisterWindowBotton" Content="登録画面表示" HorizontalAlignment="Left" VerticalAlignment="Top" Width="106" Margin="158,56,0,0" Height="47" Click="ClickRegisterWindowBotton"/>
+        <Button x:Name="ShowSearchWindowBotton" Content="検索画面表示" HorizontalAlignment="Left" Margin="30,56,0,56" VerticalAlignment="Top" Width="106" Height="47" Click="ClickSearchWindowBotton"/>
+        <Button x:Name="ShowRegisterWindowBotton" Content="登録画面表示" HorizontalAlignment="Left" Margin="158,56,30,56" VerticalAlignment="Top" Width="106"  Height="47" Click="ClickRegisterWindowBotton"/>
 
     </Grid>
 </Window>
